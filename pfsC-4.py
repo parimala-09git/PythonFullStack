@@ -11,8 +11,8 @@ eg:
 all_type=[1,'python',[1,2]]
 
 
-method
-------
+methods in list
+---------------
 1.append()
 ----------
 -->This is used to add new item into list, but it will add in the last index position
@@ -58,14 +58,17 @@ eg:
 any_=[1,2,"python is a language",[45,78,"java is a language",[1,23],90],'hello']
 print(any_[3][2][10])
 
+eg:
+indexing in list
+any_ = [1,2,'python is a language',[45,78,"Java is a language",[1,23],90],'Hello']
+print(any_[3][3][1])
 
 3.pop()
 -------
 -->Pop will remove the value from the list, but it will remove based on the index position..
--->variable_name.pop(index position)
+-->syntax: variable_name.pop(index position)
 
 eg:
-
 any_=[1,2,45,78,23,90]
 any_.pop(1)
 print(any_)
@@ -73,10 +76,9 @@ print(any_)
 4.remove()
 ----------
 -->It is used to delete the item from the list, but it will delete direct value from the list..
--->variable_name.remove(delete the value you want to delete)
+-->syntax: variable_name.remove(delete the value you want to delete)
 
 eg:
-
 any_=[1,2,45,78,23,90]
 any_.remove(1)
 print(any_)
@@ -90,7 +92,6 @@ eg:
 6.sort()
 --------
 eg:
-
 any_=[78,45,34,1]
 any_.sort()
 print(any_)
@@ -133,6 +134,9 @@ how=(1,2,3,4,"python",[4,5],(90,78))
 print(how.count('python'))
 
 '''
+
+
+
 
 
 
