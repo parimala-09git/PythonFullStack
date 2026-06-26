@@ -85,8 +85,11 @@ print(any_)
 
 5.insert()
 ----------
--->
+-->We can insert the item or value at a particular index position
 eg:
+any_=[1,2,45,78,23,90]
+any_.insert(1,3)
+print(any_)
 
 
 6.sort()
