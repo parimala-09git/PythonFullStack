@@ -5,7 +5,6 @@ loops
 ----------
 -->A for loop is used to iterate over a sequence, list, tuple, dict(getting inside the values one by one)
 eg:
-
 any_="python is a language"
 for j in any_:
     print(j)
@@ -59,16 +58,6 @@ while i<5:
     print(i)
     i+=1
 
-
-
-
-
-
-
-
-
-
-
 Control statements
 ------------------
 1.break
@@ -82,7 +71,6 @@ for j in any_:
         break
 else:
     print("Entered")
-
 
 2.continue
 ----------
@@ -104,7 +92,6 @@ any_=[1,2,3,4,5]
 for j in any_:
     pass
 
-
 **range()
 -------
 -->range is an in-built function that is used to generate sequence upto certain range(limit)
@@ -120,11 +107,10 @@ any_=[1,2,3,4,5]
 for j in range(1,50,2):
     print(j)
 
-eg:
-
 **assert
 --------
--->
+--> It is used to check the condition, but it will raise an error incase it is false...
+
 eg:
 num=10
 assert num>0, "has to be positive" #it does not shows any error if the condition is true
@@ -134,11 +120,10 @@ num=10
 assert num<0, "has to be positive" #it shows error if the condition is false
 
 eg:
-'''
 age=int(input("Enter you age: "))
 assert age>=18, "you must have 18 years"
 
-
+'''
 
 
 
