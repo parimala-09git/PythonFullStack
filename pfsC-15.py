@@ -61,7 +61,7 @@ def palindrome(so):
         print(f"{so} is a palindrome")
     else:
         print(f"{so} is not a palindrome")
-palindrome("Garikapati")
+palindrome("pari")
 
 
 eg:perfect number
@@ -75,7 +75,6 @@ def perfect(num, sum_):
         print(f"{num} is a perfect number")
     else:
         print(f"{num} is not a perfect number")
-
 perfect(num, sum_)
 '''
 
