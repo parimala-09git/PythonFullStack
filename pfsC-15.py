@@ -52,6 +52,32 @@ def cap_small(some,cap_count,small_count,space_count):
     print(f"There are total {space_count} number spaces")
 cap_small(some,cap_count,small_count,space_count)
 
+eg:Palindrome
+def palindrome(so):
+    empty_ = ""
+    for j in so:
+        empty_ = j + empty_
+    if empty_ == so:
+        print(f"{so} is a palindrome")
+    else:
+        print(f"{so} is not a palindrome")
+palindrome("Garikapati")
+
+
+eg:perfect number
+num = 28
+sum_ = 0
+def perfect(num, sum_):
+    for j in range(1, num):
+        if num % j == 0:
+            sum_ += j
+    if sum_ == num:
+        print(f"{num} is a perfect number")
+    else:
+        print(f"{num} is not a perfect number")
+
+perfect(num, sum_)
+'''
 
 
 
