@@ -13,15 +13,8 @@ receiver_email="radha19962005@gmail.com"
 message=EmailMessage()
 message["From"]=sender_email
 message["To"]=receiver_email
-message["Subject"]="Hi Jahnavi"
-message.set_content(f"""
-Hello Jahnavi!
-
-Welcome to our python class
-
-Regards,
-Python Team
-""")
+message["Subject"]="Welcome Mail"
+message.set_content("Welcome to Codegnan")
 
 context=ssl.create_default_context()
 with smtplib.SMTP("smtp.gmail.com",port=587) as smtp:
@@ -30,4 +23,3 @@ with smtplib.SMTP("smtp.gmail.com",port=587) as smtp:
     smtp.ehlo()
     smtp.login(sender_email, password)
     smtp.send_message(message)
-    
