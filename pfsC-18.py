@@ -1,0 +1,33 @@
+'''
+SMTP module
+email.message
+crew uyzw isrg lnjd
+'''
+import smtplib
+import ssl
+from email.message import EmailMessage
+sender_email="parimalapathivada@gmail.com"
+password="crewuyzwisrglnjd"
+
+receiver_email="radha19962005@gmail.com"
+message=EmailMessage()
+message["From"]=sender_email
+message["To"]=receiver_email
+message["Subject"]="Hi Jahnavi"
+message.set_content(f"""
+Hello Jahnavi!
+
+Welcome to our python class
+
+Regards,
+Python Team
+""")
+
+context=ssl.create_default_context()
+with smtplib.SMTP("smtp.gmail.com",port=587) as smtp:
+    smtp.ehlo()
+    smtp.starttls(context=context)
+    smtp.ehlo()
+    smtp.login(sender_email, password)
+    smtp.send_message(message)
+    
